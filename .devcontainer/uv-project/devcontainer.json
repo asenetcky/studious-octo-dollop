@@ -31,7 +31,7 @@
   },
   "postCreateCommand": {
     "uv-init": ["uv", "init", "--quiet"],
-    "install-dev-tools": ["uv", "pip", "install", "--system", "pre-commit"],
+    "install-dev-tools": ["uv", "pip", "install", "pre-commit"],
     "pre-commit-install": ["pre-commit", "install"]
   },
   //"postCreateCommand": "uv init && uv add --dev pre-commit",
