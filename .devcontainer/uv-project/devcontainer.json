@@ -29,11 +29,7 @@
       }
     }
   },
-  "postCreateCommand": [
-    "uv init",
-    "uv add --dev pre-commit",
-    "uv tool run pre-commit install"
-  ],
+  "postCreateCommand":  "uv init && uv add --dev pre-commit && uv tool run pre-commit install",
   // "postCreateCommand": {
   //   "uv-init": ["uv", "init"],
   //   "install-dev-tools": ["uv", "add", "--dev", "pre-commit"],
