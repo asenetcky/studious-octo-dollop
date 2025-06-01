@@ -29,11 +29,16 @@
       }
     }
   },
-  "postCreateCommand": {
-    "uv-init": ["uv", "init"],
-    "install-dev-tools": ["uv", "add", "--dev", "pre-commit"],
-    "pre-commit-install": ["uv", "tool", "run", "pre-commit", "install"]
-  },
+  "postCreateCommand": [
+    "uv init",
+    "uv add --dev pre-commit",
+    "uv tool run pre-commit install"
+  ],
+  // "postCreateCommand": {
+  //   "uv-init": ["uv", "init"],
+  //   "install-dev-tools": ["uv", "add", "--dev", "pre-commit"],
+  //   "pre-commit-install": ["uv", "tool", "run", "pre-commit", "install"]
+  // },
   //"postCreateCommand": "uv init && uv add --dev pre-commit",
   "postStartCommand": "uv sync",
   "remoteUser": "vscode"
