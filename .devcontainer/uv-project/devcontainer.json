@@ -30,7 +30,7 @@
     }
   },
   "postCreateCommand": {
-    "uv-init": ["uv", "init", "--quiet"],
+    "uv-init": ["uv", "init"],
     "install-dev-tools": ["uv", "pip", "install", "pre-commit"],
     "pre-commit-install": ["pre-commit", "install"]
   },
